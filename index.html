@@ -14,7 +14,26 @@
     </header>
 
     <main>
+
+        <!-- Controls -->
+        <section class="controls">
+            <div class="filters">
+                <button onclick="setFilter('ALL')">All</button>
+                <button onclick="setFilter('easy')">Easy</button>
+                <button onclick="setFilter('medium')">Medium</button>
+                <button onclick="setFilter('hard')">Hard</button>
+                <button onclick="setFilter('quick')">Quick (&lt;30 min)</button>
+            </div>
+
+            <div class="sorts">
+                <button onclick="setSort('name')">Name (A–Z)</button>
+                <button onclick="setSort('time')">Time (Fastest)</button>
+            </div>
+        </section>
+
+        <!-- Recipe Cards -->
         <div id="recipe-container"></div>
+
     </main>
 
     <script src="test.js"></script>
